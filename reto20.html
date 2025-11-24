@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Multiplicar</title>
+    <style>
+        th{
+            background-color: bisque;
+
+        }
+        td{
+            color: black;
+
+        }
+        h1{
+            color:brown;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabla de Multiplicar</h1>
+
+    <script>
+       
+        let numToMultiply = prompt("¿Qué número deseas multiplicar?");
+        let num = parseInt(numToMultiply);
+
+        if (isNaN(num)) {
+            alert("Por favor ingresa un número válido.");
+        } else {
+
+           
+            let textoAlert = "Tabla del " + num + "\n\n";
+            for (let i = 1; i <= 10; i++) {
+                textoAlert += `${num} x ${i} = ${num * i}\n`;
+            }
+            alert(textoAlert);
+
+            
+            document.write("<h2>Tabla del " + num + "</h2>");
+            document.write('<table border="1">');
+            document.write('<tr><th>Factor</th><th>x Itera</th><th>Resultado</th></tr>');
+
+           
+            console.log("--- TABLA DEL " + num + " ---");
+
+            for (let i = 1; i <= 10; i++) {
+                let resultado = num * i;
+
+               
+                document.write(`
+                    <tr>
+                        <td>${num}</td>
+                        <td>${i}</td>
+                        <td>${resultado}</td>
+                    </tr>
+                `);
+
+                
+                console.log(`${num} x ${i} = ${resultado}`);
+            }
+
+            document.write('</table>');
+        }
+    </script>
+
+</body>
+</html>
