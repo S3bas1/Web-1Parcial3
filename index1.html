@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Programación</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-light: #FFF8F3;
+            --bg-card: #FFFFFF;
+            --text-dark: #3A3A3A;
+
+            --pastel-rosa: #F7B8D4;
+            --pastel-naranja: #FFD6A5;
+            --pastel-azul: #A8D8FF;
+            --pastel-verde: #B7F7CE;
+
+            --shadow-soft: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+        }
+
+        /*  HEADER  */
+        header h1 {
+            font-weight: 800;
+            color: var(--pastel-azul);
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: #7A7A7A;
+            letter-spacing: 1px;
+        }
+
+        /*  CARDS PRINCIPALES  */
+        .main-options .card {
+            background-color: var(--bg-card);
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow-soft);
+            transition: 0.3s ease;
+        }
+
+        .main-options .card:hover {
+            transform: translateY(-6px);
+        }
+
+        .btn-custom {
+            padding: 0.7rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s ease;
+            width: 70%;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .btn-pink {
+            background-color: var(--pastel-rosa);
+            color: #5A3A4A;
+        }
+        .btn-orange {
+            background-color: var(--pastel-naranja);
+            color: #704A25;
+        }
+        .btn-blue {
+            background-color: var(--pastel-azul);
+            color: #1A3A50;
+        }
+        .btn-green {
+            background-color: var(--pastel-verde);
+            color: #1B4D33;
+        }
+
+        .btn-custom:hover {
+            transform: scale(1.05);
+            box-shadow: var(--shadow-soft);
+        }
+
+        /*  TARJETAS PRACTICAS  */
+        .card-portfolio {
+            background-color: var(--bg-card);
+            border-radius: 12px;
+            box-shadow: var(--shadow-soft);
+            transition: 0.25s ease;
+            border: none;
+        }
+
+        .card-portfolio:hover {
+            transform: translateY(-6px);
+        }
+
+        .card-link {
+            padding: 1rem;
+            color: var(--text-dark);
+            text-decoration: none;
+            display: block;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        .card-link:hover {
+            color: var(--pastel-azul);
+        }
+
+        /*  FOOTER  */
+        footer {
+            background-color: #F2EDEB;
+            color: #6A6A6A;
+            margin-top: 60px;
+            padding: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="py-5">
+    <h1>Portafolio Final</h1>
+    <p>HTML • CSS • JavaScript</p>
+</header>
+
+<div class="container">
+
+    <section class="main-options mt-4 mb-5">
+        <div class="row justify-content-center g-4">
+
+            <div class="col-md-5">
+                <div class="card">
+                    <h3 class="mb-3">Parcial 1</h3>
+                    <a href="https://github.com/S3bas1/Web-I/tree/main/HTML" target="_blank" class="btn-custom btn-blue">
+                        Ver Código en GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <div class="card">
+                    <h3 class="mb-3">Parcial 2</h3>
+                    <a href="https://s3bas1.github.io/Web-I/" target="_blank" class="btn-custom btn-pink">
+                        Ver Portafolio
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section>
+        <h2 class="mb-4" style="color: var(--pastel-azul);">Prácticas 1 - 20</h2>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+             <div class="col card-col" data-index="1"><div class="card card-portfolio"><a href="reto1.html" target="_blank" class="card-link">Reto 1</a></div></div>
+                <div class="col card-col" data-index="2"><div class="card card-portfolio"><a href="reto2.html" target="_blank" class="card-link">Reto 2</a></div></div>
+                <div class="col card-col" data-index="3"><div class="card card-portfolio"><a href="proyecto_final.html" target="_blank" class="card-link">Proyecto Xant 1</a></div></div>
+                <div class="col card-col" data-index="4"><div class="card card-portfolio"><a href="proyecto2_final.html" target="_blank" class="card-link">Proyecto Xant 2</a></div></div>
+                <div class="col card-col" data-index="5"><div class="card card-portfolio"><a href="proyecto3_final.html" target="_blank" class="card-link">Proyecto Xant 3</a></div></div>
+                <div class="col card-col" data-index="6"><div class="card card-portfolio"><a href="ejercicio1.html" target="_blank" class="card-link">Práctica 1</a></div></div>
+                <div class="col card-col" data-index="6"><div class="card card-portfolio"><a href="ejercicio2.html" target="_blank" class="card-link">Práctica 2</a></div></div>
+                <div class="col card-col" data-index="6"><div class="card card-portfolio"><a href="ejercicio3.html" target="_blank" class="card-link">Práctica 3</a></div></div>
+                <div class="col card-col" data-index="7"><div class="card card-portfolio"><a href="ejercicio4.html" target="_blank" class="card-link">Práctica 4</a></div></div>
+                <div class="col card-col" data-index="8"><div class="card card-portfolio"><a href="ejercicio5.html" target="_blank" class="card-link">Práctica 5</a></div></div>
+                 <div class="col card-col" data-index="8"><div class="card card-portfolio"><a href="ejercicio6.html" target="_blank" class="card-link">Práctica 6</a></div></div>
+                 <div class="col card-col" data-index="8"><div class="card card-portfolio"><a href="ejercicio7.html" target="_blank" class="card-link">Práctica 7</a></div></div>
+                 <div class="col card-col" data-index="8"><div class="card card-portfolio"><a href="ejercicio8.html" target="_blank" class="card-link">Práctica 8</a></div></div>
+                 <div class="col card-col" data-index="8"><div class="card card-portfolio"><a href="ejercicio9.html" target="_blank" class="card-link">Práctica 9</a></div></div>
+                <div class="col card-col" data-index="9"><div class="card card-portfolio"><a href="ejercicio10.html" target="_blank" class="card-link">Práctica 10</a></div></div>
+                <div class="col card-col" data-index="10"><div class="card card-portfolio"><a href="cierremodulo7.html" target="_blank" class="card-link">Cierre Módulo 7</a></div></div>
+                <div class="col card-col" data-index="11"><div class="card card-portfolio"><a href="ejercicio11.html" target="_blank" class="card-link">Práctica 11</a></div></div>
+                <div class="col card-col" data-index="12"><div class="card card-portfolio"><a href="ejercicio12.html" target="_blank" class="card-link">Práctica 12</a></div></div>
+                <div class="col card-col" data-index="13"><div class="card card-portfolio"><a href="ejercicio13.html" target="_blank" class="card-link">Práctica 13</a></div></div>
+                <div class="col card-col" data-index="14"><div class="card card-portfolio"><a href="ejercicio14.html" target="_blank" class="card-link">Práctica 14</a></div></div>
+                <div class="col card-col" data-index="15"><div class="card card-portfolio"><a href="ejercicio15.html" target="_blank" class="card-link">Práctica 15</a></div></div>
+                <div class="col card-col" data-index="16"><div class="card card-portfolio"><a href="ejercicio16.html" target="_blank" class="card-link">Práctica 16</a></div></div>
+                <div class="col card-col" data-index="17"><div class="card card-portfolio"><a href="ejercicio17.html" target="_blank" class="card-link">Práctica 17</a></div></div>
+                <div class="col card-col" data-index="18"><div class="card card-portfolio"><a href="ejercicio18.html" target="_blank" class="card-link">Práctica 18</a></div></div>
+                <div class="col card-col" data-index="19"><div class="card card-portfolio"><a href="ejercicio19.html" target="_blank" class="card-link">Práctica 19</a></div></div>
+                <div class="col card-col" data-index="20"><div class="card card-portfolio"><a href="reto20.html" target="_blank" class="card-link">Práctica 20</a></div></div>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>2025 Portafolio Final</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
