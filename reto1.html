@@ -5,27 +5,33 @@
 div {
   width: 100px;
   height: 100px;
-  
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.8s ease-out;
 }
 
-div:hover {
-  width: 300px;
-  height: 300px;
- 
-  transform: rotate(360deg);
+
+div img {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.8s ease-out;
+}
+
+
+div:hover img {
+  transform: rotate(720deg) translateY(30px);
 }
 </style>
 </head>
 <body>
 
-<h1>Transition + Transform</h1>
+<h1>Reto 1: Pelota de Tenis</h1>
 
-<p>Hover over the div element below:</p>
 
-<div><img src="pelotaTenis.jpg" alt="pelotaTenis" ></div>
-
-<div></div>
+<div>
+  <img src="media/pelotaTenis.png" alt="pelota de tenis">
+</div>
 
 </body>
 </html>
